@@ -9,15 +9,16 @@ const Navbar = () => {
   setNavbarOpen(!navbarOpen)
 }
   return (
-    <nav className='navBar'>
-      {/* <button onClick={handleToggle}>{navbarOpen? 'Close' : 'Open'}</button>
+    <nav className='navbar'>
+      {/* <button onClick={handleToggle}>{navbarOpen? 'Close' : 'Open'}</button> */}
       <ul>
         <li>Home</li>
         <li>About</li>
         <li>Projects</li>
         <li>Skills</li>
         <li>Contact</li>
-      </ul> */}
+      </ul>
+
     </nav>
   )
 }

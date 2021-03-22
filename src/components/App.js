@@ -1,4 +1,4 @@
-
+import '../index.css'
 
 // components
 import Navbar from './Navbar'
@@ -8,13 +8,15 @@ import Projects from './Projects'
 
 function App() {
   return ( 
-    <div className="App">
+    <>
         <Navbar/>
         <Hero/>
-        <Services/>
+        <main>
+          <Services/>
+        </main>
         <Projects/>
         {/* Experience */}
-    </div>
+    </>
     
    
   );
