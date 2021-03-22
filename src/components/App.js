@@ -1,13 +1,15 @@
 import { GlobalStyles } from '../global';
 import Navbar from './Navbar'
+import Hero from './Hero'
 
 function App() {
-  return (
-    <GlobalStyles>
+  return ( 
     <div className="App">
-  <Navbar/>
+        <Navbar/>
+        <Hero/>
     </div>
-    </GlobalStyles>
+    
+   
   );
 }
 
