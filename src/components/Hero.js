@@ -11,10 +11,10 @@ const Hero = () => {
           <h1>I'm Kristen</h1>
           <p>React Front-End Developer</p>
         </div>
-        <button class='btn'>Contact Me</button>
+        <button className='btn'>Contact Me</button>
         <div className="hero__icons">
-         <FaGithub class='icons'/>
-         <FaLinkedin class='icons'/>
+         <FaGithub className='icons'/>
+         <FaLinkedin className='icons'/>
         </div>
     </div>
    </div>

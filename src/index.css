@@ -7,6 +7,7 @@
   --clr-teal: #49aeba;
   --clr-blue-background: #e0fcfe;
   --clr-gray-background: #f1f5f8;
+  --clr-btn-background: #dae2ec;
 }
 
 * {
@@ -80,7 +81,7 @@ header {
   margin-right: 20px;
 }
 
-/* Services---------------------------- */
+/* Services---------------------------------------------------- */
 .services {
   display: flex;
   flex-direction: column;
@@ -127,5 +128,71 @@ header {
 .service-icons {
   align-self: center;
   margin-top: 3rem;
+  width: 35px;
   margin-bottom: 1.5rem;
+}
+
+/* Exeperience ---------------------------------------------------- */
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+  width: 90%;
+}
+
+.job__info {
+  width: 80%;
+}
+
+.jobs__center {
+  margin: 0 auto;
+}
+
+.job__info h4 {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.job__info .company {
+  background-color: var(--clr-btn-background);
+  width: 25%;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  color: var(--clr-light-text);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.job__info .dates {
+  font-weight: 200;
+  font-size: 14px;
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+}
+
+.job__info .duties {
+  font-size: 13px;
+  font-weight: 300;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.btn-company {
+  border: none;
+  background: transparent;
+  font-size: 20px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.arrow-icon {
+  font-size: 60px;
+  fill: var(--clr-teal);
 }
