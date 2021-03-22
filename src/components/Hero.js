@@ -1,4 +1,5 @@
 import React from 'react'
+import {FaGithub, FaLinkedin} from 'react-icons/fa'
 
 const Hero = () => {
   return (
@@ -11,7 +12,10 @@ const Hero = () => {
           <p>React Front-End Developer</p>
         </div>
         <button class='btn'>Contact Me</button>
-        <div className="hero__icons"></div>
+        <div className="hero__icons">
+         <FaGithub class='icons'/>
+         <FaLinkedin class='icons'/>
+        </div>
     </div>
    </div>
   </header>

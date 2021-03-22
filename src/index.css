@@ -6,6 +6,7 @@
   --clr-light-text: #617d98;
   --clr-teal: #49aeba;
   --clr-blue-background: #e0fcfe;
+  --clr-gray-background: #f1f5f8;
 }
 
 * {
@@ -17,7 +18,7 @@
 }
 
 .container {
-  width: 93%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -28,13 +29,14 @@ nav {
 header {
   background-color: var(--clr-blue-background);
   border: none;
-  height: 100vh;
+  height: 80vh;
 }
 
 .big {
   border: 2px solid var(--clr-teal);
   width: 65px;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .hero {
@@ -61,4 +63,69 @@ header {
   border-radius: 6px;
   padding: 10px;
   letter-spacing: 4px;
+  cursor: pointer;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.hero__icons {
+  margin-top: 20px;
+}
+
+.icons {
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+/* Services---------------------------- */
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+  background-color: #f1f5f8;
+}
+
+.header__text {
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+
+.big-services {
+  margin-bottom: 60px;
+}
+
+.card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.card h4 {
+  font-size: 14px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  margin: 20px 20px 70px 20px;
+}
+
+.small {
+  border: 1px solid var(--clr-teal);
+  width: 50px;
+  margin: auto;
+}
+
+.service-icons {
+  align-self: center;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
 }
