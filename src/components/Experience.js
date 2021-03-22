@@ -10,6 +10,7 @@ const Experience = () => {
   const [value, setValue] = useState(0)
 
 
+
   // getting first job in the array
   const { title, dates, duties, company } = jobs[value];
   return (
@@ -21,7 +22,9 @@ const Experience = () => {
             <div className="btn-container">
               {
                 jobs.map((item, index) => {
-                  return  <button key={item.id} className='btn-company' onClick={handleChange}>
+                  return  <button key={item.id} 
+                          onClick={() => setValue(index)}
+                          className='btn-company'>
                     {item.company}
                   </button>
                 })

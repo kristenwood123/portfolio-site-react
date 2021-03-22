@@ -13,7 +13,7 @@ const jobs = [
     order: 2,
     title: 'Front-End Web Developer',
     dates: 'May 2017 - December 2019',
-    duties: ['Fromage stinking bishop cheesy feet. Croque monsieur squirty cheese cow queso goat stinking bishop mozzarella port-salut. Smelly cheese everyone loves swiss roquefort feta cheese slices caerphilly dolcelatte.', 'Fromage frais the big cheese airedale edam cheesecake mozzarella stilton stinking bishop. Fondue mascarpone gouda. Mozzarella paneer cheesy feet bocconcini swiss cheesy feet smelly cheese stilton.', 'Jarlsberg paneer cow macaroni cheese cow emmental squirty cheese macaroni cheese.'],
+    duties: ['Fromage stinking bishop cheesy feet. Croque monsieur squirty cheese cow queso goat stinking bishop mozzarella port-salut. Smelly cheese everyone loves swiss roquefort feta cheese slices caerphilly dolcelatte.', 'Fromage frais the big cheese airedale edam cheesecake mozzarella stilton stinking bishop. Fondue mascarpone gouda. Mozzarella paneer cheesy feet bocconcini swiss cheesy feet smelly cheese stilton.', 'Jarlsberg paneer cow macaroni cheese cow emmental squirty cheese macaroni cheese. Af normcore bicycle rights hammock, helvetica echo park pickled fixie lo-fi slow-carb wayfarers forage live-edge succulents paleo.'],
     company: 'XWorks'
   },
     {
