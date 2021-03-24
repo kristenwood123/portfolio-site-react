@@ -16,7 +16,7 @@ function App() {
           <Services/>
           <Experience/>
         </main>
-        {/* <Projects/> */}
+        <Projects/>
     </>
     
    

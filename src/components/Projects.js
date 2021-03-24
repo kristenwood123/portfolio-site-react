@@ -1,25 +1,34 @@
 import React from 'react'
 import projects from '../projects'
+import {FaGit, FaGithub} from 'react-icons/fa'
 
 const Projects = () => {
   return (
     <section className='projects'>
-      <h1>Featured Projects</h1>
+      <div className="container projects__container">
+      <h1 className='header__text'>Featured Projects</h1>
         <hr className="big"/>
-      <article className="projects__card">
+      
         {projects.map((project) => {
           const {id, img, title, text, button1, button2} = project;
           return (
+            <article className="projects__card">
             <div key={id}>
-            <img src={img} style={{ width:'400px'}}alt=""/>
-            <h1>{title}</h1>
-            <p>{text}</p>
-            <button>{button1}</button>
-            <button>{button2}</button>
+            <img src={img} style={{ width:'288px', height: '300px'}} alt=""/>
+            <p className='project__number'>{`0${id}.`}</p>
+            <h1 className='project__title'>{title}</h1>
+            <p className='project__text'>{text}</p>
+            <button className='btn2'>{button1}</button>
+            <button className='btn2'>{button2}</button><br></br>
+            <FaGithub/>
             </div>
+          </article>
           )
         })}
-      </article>
+      </div>
+      <div className="btn-container">
+      <button className='btn btn-projects'>Projects</button>
+      </div>
     </section>
   )
 }

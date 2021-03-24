@@ -24,6 +24,7 @@ const Experience = () => {
                 jobs.map((item, index) => {
                   return  <button key={item.id} 
                           onClick={() => setValue(index)}
+                          //if my index of the btn clicked matches the value(which is will, add active class to the btn)
                           className={`btn-company ${index === value && 'active-btn'}`}>
                     {item.company}
                   </button>
@@ -45,6 +46,10 @@ const Experience = () => {
                   </div>
                 )
               })}
+              <div className="btn-container">
+                <button className='btn btn-info'>More Info</button>
+              </div>
+              
             </article>
         </div>
       

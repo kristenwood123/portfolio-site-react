@@ -132,17 +132,19 @@ header {
   margin-bottom: 1.5rem;
 }
 
-/* Exeperience ---------------------------------------------------- */
+/* Experience ---------------------------------------------------- */
 .experience {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 70px;
   width: 90%;
+  background-color: white;
 }
 
 .job__info {
   width: 80%;
+  padding-bottom: 50px;
 }
 
 .jobs__center {
@@ -151,8 +153,8 @@ header {
 
 .job__info h4 {
   font-size: 20px;
-  font-weight: 200;
-  letter-spacing: 1px;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 .job__info .company {
@@ -167,9 +169,9 @@ header {
 }
 
 .job__info .dates {
-  font-weight: 200;
-  font-size: 14px;
-  letter-spacing: 4px;
+  font-weight: 300;
+  font-size: 13px;
+  letter-spacing: 3px;
   margin-bottom: 30px;
 }
 
@@ -180,10 +182,16 @@ header {
   margin-bottom: 20px;
 }
 
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
 .btn-company {
   border: none;
   background: transparent;
-  font-size: 20px;
+  font-size: 15px;
   margin: 10px;
 }
 
@@ -200,6 +208,52 @@ header {
 .arrow-icon {
   font-size: 60px;
   fill: var(--clr-teal);
-  max-width: 20px;
-  min-width: 20px;
+  max-width: 15px;
+  min-width: 15px;
+}
+
+.btn-info {
+  width: 200px;
+  margin-left: 60px;
+}
+
+/* Featured Projects ------------------------------------------ */
+
+.projects {
+  background-color: var(--clr-gray-background);
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.projects__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects__card {
+  background: white;
+  margin: 30px;
+  border-radius: 8px;
+}
+
+.btn2 {
+  background-color: var(--clr-btn-background);
+  border: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 6px;
+  color: var(--clr-light-text);
+}
+
+.project__text {
+  font-size: 13px;
+  font-weight: 200;
+}
+
+.btn-projects {
+  width: 200px;
 }
