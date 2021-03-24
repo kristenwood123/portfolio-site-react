@@ -157,7 +157,7 @@ header {
 
 .job__info .company {
   background-color: var(--clr-btn-background);
-  width: 25%;
+  width: 50%;
   text-align: center;
   border-radius: 5px;
   padding: 5px;
@@ -184,6 +184,11 @@ header {
   border: none;
   background: transparent;
   font-size: 20px;
+  margin: 10px;
+}
+
+.active-btn {
+  color: var(--clr-teal);
 }
 
 .flex {
@@ -195,4 +200,6 @@ header {
 .arrow-icon {
   font-size: 60px;
   fill: var(--clr-teal);
+  max-width: 20px;
+  min-width: 20px;
 }

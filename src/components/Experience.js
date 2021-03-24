@@ -24,7 +24,7 @@ const Experience = () => {
                 jobs.map((item, index) => {
                   return  <button key={item.id} 
                           onClick={() => setValue(index)}
-                          className='btn-company'>
+                          className={`btn-company ${index === value && 'active-btn'}`}>
                     {item.company}
                   </button>
                 })
