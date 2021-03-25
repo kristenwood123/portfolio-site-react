@@ -6,6 +6,8 @@ import Hero from './Hero'
 import Services from './Services'
 import Projects from './Projects'
 import Experience from './Experience'
+import Skills from './Skills'
+import Interests from './Interests'
 
 function App() {
   return ( 
@@ -17,6 +19,8 @@ function App() {
           <Experience/>
         </main>
         <Projects/>
+        <Skills/>
+        <Interests/>
     </>
     
    
