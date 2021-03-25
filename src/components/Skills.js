@@ -3,9 +3,10 @@ import React from 'react'
 const Skills = () => {
   return (
     <section className='skills' id='skills'>
-      <h2 className='header__text'>Skills</h2>
-        <h2 className='big hr-skills'></h2>
+      <h1 className='header__text'>Skills</h1>
+        <hr className='big hr-skills'></hr>
         <article class="skills-container">
+
         <div class="skills__item" data-aos='fade-up'>
         <img src="./images/icons8-javascript-96.png" alt="JS"/>
         <p>Javascript</p>

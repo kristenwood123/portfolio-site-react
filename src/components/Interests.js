@@ -35,9 +35,11 @@ const Interests = () => {
   return (
     <section className='interests'>
       <h1 className='header__text'>Interests</h1>
+        <hr className='big hr-interests'></hr>
+
       <article className="game__slider">
         <div className="game" key={id}>
-          <img src={img} alt={title}/>
+          <img className='game__img' src={img} alt={title}/>
             <h4 className="game__title">{title}</h4>
             <p className="game__text">{text}</p>
         </div>
