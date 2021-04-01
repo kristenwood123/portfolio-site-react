@@ -8,6 +8,7 @@ import Projects from './Projects'
 import Experience from './Experience'
 import Skills from './Skills'
 import Interests from './Interests'
+import Footer from './Footer'
 
 function App() {
   return ( 
@@ -21,6 +22,7 @@ function App() {
         <Projects/>
         <Skills/>
         <Interests/>
+        <Footer/>
     </>
     
    

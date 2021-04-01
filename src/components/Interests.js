@@ -35,7 +35,6 @@ const Interests = () => {
     <section className='interests'>
       <h1 className='header__text'>Interests</h1>
         <hr className='big hr-interests'></hr>
-
       <article className="game__slider">
         <div className="game__container" key={id}>
           <img className='game__img' src={img} alt={title}/>

@@ -8,6 +8,7 @@
   --clr-blue-background: #e0fcfe;
   --clr-gray-background: #f1f5f8;
   --clr-btn-background: #dae2ec;
+  --clr-footer: #222223;
 }
 
 * {
@@ -354,4 +355,22 @@ header {
   display: flex;
   justify-content: space-between;
   width: 50%;
+}
+
+/* Footer -------------------------------------------- */
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: var(--clr-footer);
+}
+
+.footer__text {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 3px;
 }
