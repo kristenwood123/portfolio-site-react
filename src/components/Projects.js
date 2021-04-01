@@ -14,7 +14,7 @@ const Projects = () => {
           return (
             <article className="projects__card">
             <div key={id}>
-            <img src={img} className='project__img' alt=""/>
+            <img src={img} className='project__img' alt=""/>           
             <div className="project2__container">
               <p className='project__number'>{`0${id}.`}</p>
               <h1 className='project__title'>{title}</h1>
