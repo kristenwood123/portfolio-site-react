@@ -41,6 +41,7 @@ header {
 }
 
 .hero {
+  padding-top: 150px;
   margin: 0 auto;
   height: 50%;
 }
@@ -229,12 +230,35 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+}
+
+.project2__container {
+  margin: 15px 30px;
 }
 
 .projects__card {
   background: white;
   margin: 30px;
   border-radius: 8px;
+}
+
+.project__number {
+  color: var(--clr-teal);
+  margin-bottom: 10px;
+}
+
+.project__title {
+  margin-bottom: 10px;
+}
+
+.project__text {
+  font-size: 13px;
+  font-weight: 200;
+  word-spacing: 5px;
+}
+.project__button__container {
+  display: flex;
 }
 
 .btn2 {
@@ -249,13 +273,17 @@ header {
   color: var(--clr-light-text);
 }
 
-.project__text {
-  font-size: 13px;
-  font-weight: 200;
+.project__icon {
+  color: var(--clr-teal);
+  size: 50px;
 }
 
 .btn-projects {
   width: 200px;
+}
+
+.project__img {
+  width: 100%;
 }
 
 /* Skills ---------------------------------------- */
