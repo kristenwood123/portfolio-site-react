@@ -1,6 +1,6 @@
 import React from 'react'
 import projects from '../projects'
-import {FaGit, FaGithub} from 'react-icons/fa'
+import {FaGit, FaGithubSquare} from 'react-icons/fa'
 
 const Projects = () => {
   return (
@@ -23,7 +23,7 @@ const Projects = () => {
                 <button className='btn2'>{button1}</button>
                 <button className='btn2'>{button2}</button><br></br>
                 </div>
-                <FaGithub className='project__icon'/>
+                <FaGithubSquare className='project__icon'/>
               </div>
             </div>
           </article>

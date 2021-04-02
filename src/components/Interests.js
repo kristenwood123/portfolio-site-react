@@ -43,10 +43,10 @@ const Interests = () => {
         </div>
           <div className="button-container">
           <span className="prev-btn">  
-            <FaArrowLeft onClick={prevGame}/>
+            <FaArrowLeft onClick={prevGame} className='game__btn'/>
           </span>
           <span className="next-btn">
-            <FaArrowRight onClick={nextGame}/>
+            <FaArrowRight onClick={nextGame} className='game__btn'/>
           </span>
         </div>
       </article>

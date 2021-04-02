@@ -276,7 +276,7 @@ header {
 }
 
 .project__icon {
-  color: var(--clr-teal);
+  fill: var(--clr-teal);
   size: 50px;
 }
 
@@ -347,7 +347,7 @@ header {
 .game__img {
   width: 50%;
   border-radius: 50%;
-  max-height: 300px;
+  max-height: 200px;
 }
 
 .button-container {
@@ -355,6 +355,17 @@ header {
   display: flex;
   justify-content: space-between;
   width: 50%;
+}
+
+.game__btn {
+  fill: var(--clr-teal);
+  cursor: pointer;
+  font-size: 23px;
+}
+
+.game__btn:hover {
+  transform: scale(1.2);
+  transition: ease-in-out;
 }
 
 /* Footer -------------------------------------------- */
@@ -367,10 +378,27 @@ footer {
   background: var(--clr-footer);
 }
 
+.footer-icon__container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
 .footer__text {
   color: white;
   text-align: center;
+  font-size: 14px;
   text-transform: uppercase;
-  font-size: 18px;
   letter-spacing: 3px;
+}
+
+.footer-icon {
+  fill: white;
+  font-size: 30px;
+}
+
+.footer-icon:hover {
+  fill: var(--clr-teal);
+  cursor: pointer;
 }
