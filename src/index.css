@@ -118,6 +118,7 @@ header {
 
 .card p {
   font-size: 14px;
+  font-weight: 300;
   margin: 20px 20px 70px 20px;
 }
 
@@ -147,9 +148,6 @@ header {
 .job__info {
   width: 80%;
   padding-bottom: 50px;
-}
-
-.jobs__center {
   margin: 0 auto;
 }
 
@@ -216,7 +214,7 @@ header {
 
 .btn-info {
   width: 200px;
-  margin-left: 60px;
+  /* margin-left: 60px; */
 }
 
 /* Featured Projects ------------------------------------------ */
@@ -275,9 +273,14 @@ header {
   color: var(--clr-light-text);
 }
 
+.project__icon-container {
+  display: flex;
+}
+
 .project__icon {
   fill: var(--clr-teal);
-  size: 50px;
+  font-size: 20px;
+  margin-right: 10px;
 }
 
 .btn-projects {
@@ -286,6 +289,10 @@ header {
 
 .project__img {
   width: 100%;
+  z-index: 0;
+}
+
+.project__overlay {
 }
 
 /* Skills ---------------------------------------- */
@@ -348,6 +355,7 @@ header {
   width: 50%;
   border-radius: 50%;
   max-height: 200px;
+  max-width: 200px;
 }
 
 .button-container {
@@ -401,4 +409,38 @@ footer {
 .footer-icon:hover {
   fill: var(--clr-teal);
   cursor: pointer;
+}
+
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* -------------------- Media Queries----------------------- */
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
+@media screen and (min-width: 768px) {
+  .hero__text h1 {
+    font-size: 50px;
+  }
+
+  .hero__text p {
+    font-size: 20px;
+    margin-top: -10px;
+  }
+
+  /* Services -------------------------------- */
+  .services-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    margin: 10px;
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .jobs__center {
+    max-width: 892px;
+  }
 }

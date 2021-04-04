@@ -13,15 +13,16 @@ import Footer from './Footer'
 function App() {
   return ( 
     <>
+    
         <Navbar/>
         <Hero/>
        <main>
           <Services/>
           <Experience/>
-        </main>
-        <Projects/>
-        <Skills/>
-        <Interests/>
+          <Projects/>
+          <Skills/>
+          <Interests/>
+         </main>
         <Footer/>
     </>
     
