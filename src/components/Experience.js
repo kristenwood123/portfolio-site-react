@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import data from '../experience'
-import {FaAngleDoubleRight} from 'react-icons/fa'
+import { FaAngleDoubleRight } from 'react-icons/fa'
 
 
 
