@@ -13,7 +13,6 @@ import Footer from './Footer'
 function App() {
   return ( 
     <>
-    
         <Navbar/>
         <Hero/>
        <main>

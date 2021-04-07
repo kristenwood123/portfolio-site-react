@@ -19,7 +19,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="hero__image-container">
-        <img src="./images/inst.JPG" alt="profile image" className='hero__image1'/>
+        <img src="./images/inst.JPG" alt="profile of me" className='hero__image1'/>
       </div>
    </div>
   </span>

@@ -1,24 +1,36 @@
 import React, { useState } from 'react'
-// import { FaTimes } from 'react-icons/fa'
+import { FaBars } from 'react-icons/fa'
 
 const Navbar = () => {
 
-  const [navbarOpen, setNavbarOpen] = useState(true)
-
-  const handleToggle = () => {
-  setNavbarOpen(!navbarOpen)
-}
   return (
     <nav className='navbar'>
-      {/* <button onClick={handleToggle}>{navbarOpen? 'Close' : 'Open'}</button> */}
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Projects</li>
-        <li>Skills</li>
-        <li>Contact</li>
-      </ul>
-
+      <div className="nav-center">
+        <div className="nav__header">
+          <button className="nav-toggle">
+            <FaBars/>
+          </button>
+        </div>
+        <div className="nav__link-container show-container">
+          <ul className="links">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Skills</a>
+            </li>
+            <li>
+              <a href="#">Projects</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>   
+          </ul>
+        </div>
+      </div>
     </nav>
   )
 }

@@ -9,6 +9,7 @@
   --clr-gray-background: #f1f5f8;
   --clr-btn-background: #dae2ec;
   --clr-footer: #222223;
+  --transition: all 0.3s linear;
 }
 
 * {
@@ -22,11 +23,54 @@
 .container {
   width: 90%;
   margin: 0 auto;
-  /* height: 100vh; */
 }
 
 nav {
   background-color: white;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav-toggle {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.nav-toggle:hover {
+  color: var(--clr-teal);
+  transform: rotate(90deg);
+}
+
+.links a {
+  color: black;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.links a:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in;
+}
+
+.links-container {
+  /* height: 0; */
+  /* overflow: hidden; */
+  transition: var(--transition);
+}
+
+.show-container {
+  /* height: 10rem; */
 }
 
 header {
@@ -422,6 +466,38 @@ footer {
 /* --------------------------------------------------------- */
 /* --------------------------------------------------------- */
 @media screen and (min-width: 768px) {
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links-container {
+    height: auto !important;
+  }
+  .links {
+    display: flex;
+  }
+  .links ul {
+    list-style-type: none;
+  }
+  .links a {
+    margin: 0 0.5rem;
+    list-style-type: none;
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
+
   .hero__text h1 {
     font-size: 50px;
   }
