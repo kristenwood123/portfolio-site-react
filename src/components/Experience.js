@@ -14,7 +14,7 @@ const Experience = () => {
   // getting first job in the array
   const { title, dates, duties, company } = jobs[value];
   return (
-    <section className='experience container '>
+    <section className='experience container' id='experience'>
       <h1 className='header__text'>Experience</h1>
         <hr className='big big-experience'/>
 
