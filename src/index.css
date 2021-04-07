@@ -22,7 +22,7 @@
 .container {
   width: 90%;
   margin: 0 auto;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 nav {
@@ -431,9 +431,6 @@ footer {
     margin-top: -10px;
   }
 
-  .projects {
-    padding-bottom: 1350px;
-  }
   /* Services -------------------------------- */
   .services-container {
     display: flex;
