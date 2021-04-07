@@ -10,6 +10,7 @@
   --clr-btn-background: #dae2ec;
   --clr-footer: #222223;
   --transition: all 0.3s linear;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -27,6 +28,7 @@
 
 nav {
   background-color: white;
+  box-shadow: var(--light-shadow);
 }
 
 .nav-header {
@@ -41,6 +43,9 @@ nav {
   border-color: transparent;
   transition: var(--transition);
   cursor: pointer;
+  float: right;
+  margin-right: 5px;
+  margin-top: 10px;
 }
 
 .nav-toggle:hover {
@@ -58,21 +63,21 @@ nav {
   text-decoration: none;
 }
 
-.links a:hover {
-  transform: scale(1.1);
-  transition: 0.3s ease-in;
+.links li {
+  list-style-type: none;
 }
 
-.links-container {
-  /* height: 0; */
-  /* overflow: hidden; */
+.nav__link-container {
+  height: 0;
+  overflow: hidden;
   transition: var(--transition);
 }
 
 .show-container {
-  /* height: 10rem; */
+  height: 13rem;
 }
 
+/* Header ----------------------------------------- */
 header {
   border: none;
   background-color: var(--clr-blue-background);
@@ -480,22 +485,20 @@ footer {
   .nav-toggle {
     display: none;
   }
-  .links-container {
+  .nav__link-container {
     height: auto !important;
   }
   .links {
     display: flex;
   }
-  .links ul {
-    list-style-type: none;
-  }
+
   .links a {
     margin: 0 0.5rem;
     list-style-type: none;
   }
+
   .links a:hover {
-    padding: 0;
-    background: transparent;
+    transform: scale(1.1);
   }
 
   .hero__text h1 {

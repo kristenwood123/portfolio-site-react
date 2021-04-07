@@ -10,6 +10,7 @@ import Skills from './Skills'
 import Interests from './Interests'
 import Footer from './Footer'
 
+
 function App() {
   return ( 
     <>
