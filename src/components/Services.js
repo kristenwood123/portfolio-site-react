@@ -5,7 +5,7 @@ const Services = () => {
     <section className='services'>
       <h1 className='header__text'>Services</h1>
         <hr className='big big-services'/>
-    <div className="container services-container">
+    <div className="services-container">
       <article className="card">
         <img class='service-icons' src='./images/developer.png' alt="mobile phone"/>
         <h4>Web Development</h4>

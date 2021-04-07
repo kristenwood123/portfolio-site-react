@@ -4,8 +4,9 @@ import {FaGithub, FaLinkedin} from 'react-icons/fa'
 const Hero = () => {
   return (
     <header>
+    <span className="header__color">
       <div className="container">
-      <div className='hero'>
+        <div className='hero'>
         <hr className='big'/>
         <div className="hero__text">
           <h1>I'm Kristen</h1>
@@ -16,8 +17,12 @@ const Hero = () => {
          <FaGithub className='icons'/>
          <FaLinkedin className='icons'/>
         </div>
-    </div>
+      </div>
+      <div className="hero__image-container">
+        <img src="./images/inst.JPG" alt="profile image" className='hero__image1'/>
+      </div>
    </div>
+  </span>
   </header>
   )
 }

@@ -22,6 +22,7 @@
 .container {
   width: 90%;
   margin: 0 auto;
+  height: 100vh;
 }
 
 nav {
@@ -29,9 +30,12 @@ nav {
 }
 
 header {
-  background-color: var(--clr-blue-background);
   border: none;
-  height: 80vh;
+  background-color: var(--clr-blue-background);
+}
+
+.header__color {
+  background-color: var(--clr-blue-background);
 }
 
 .big {
@@ -43,8 +47,8 @@ header {
 
 .hero {
   padding-top: 150px;
-  margin: 0 auto;
-  height: 50%;
+  max-width: 50%;
+  display: inline-block;
 }
 
 .hero__text h1 {
@@ -81,6 +85,10 @@ header {
 .icons {
   font-size: 30px;
   margin-right: 20px;
+}
+
+.hero__image-container {
+  display: none;
 }
 
 /* Services---------------------------------------------------- */
@@ -423,6 +431,9 @@ footer {
     margin-top: -10px;
   }
 
+  .projects {
+    padding-bottom: 1350px;
+  }
   /* Services -------------------------------- */
   .services-container {
     display: flex;
@@ -436,7 +447,11 @@ footer {
   }
 }
 
-@media screen and (min-width: 1067px) {
+@media screen and (min-width: 1069px) {
+  .header__color {
+    width: 50%;
+  }
+
   .jobs__center {
     max-width: 892px;
   }
@@ -464,9 +479,8 @@ footer {
   }
 
   .project2__container {
-    position: relative;
-    margin: 0;
     background-color: white;
+    position: relative;
     left: 150px;
     bottom: 350px;
     z-index: 1;
@@ -475,7 +489,29 @@ footer {
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
     padding: 15px;
   }
+
   .game__slider {
     max-width: 800px;
+  }
+}
+
+@media screen and (min-width: 1191px) {
+  .hero__image-container {
+    display: inline-block;
+    margin-top: 50px;
+  }
+
+  .hero__image1 {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    margin-left: 300px;
+    padding: 80px 80px 15px 20px;
+  }
+
+  .hero__image1:hover {
+    filter: none;
+    transition: 0.3s ease-in;
   }
 }
