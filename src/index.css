@@ -137,6 +137,13 @@ header {
   margin-right: 20px;
 }
 
+.icons:hover {
+  fill: var(--clr-teal);
+  transform: scale(1.1);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
 .hero__image-container {
   display: none;
 }
@@ -459,6 +466,7 @@ footer {
 .footer-icon {
   fill: white;
   font-size: 30px;
+  cursor: pointer;
 }
 
 .footer-icon:hover {

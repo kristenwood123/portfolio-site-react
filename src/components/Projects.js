@@ -38,8 +38,8 @@ const Projects = () => {
                   <button className='btn2'>{button2}</button><br></br>
                 </div>
                 <div className="project__icon-container">
-                  <FaGithubSquare className='project__icon' />
-                  <FaShareSquare className='project__icon' />
+                  <FaGithubSquare className='project__icon icons' href='https://github.com/kristenwood123' />
+                  <FaShareSquare className='project__icon icons' />
                 </div>
               </div>
             </article>
