@@ -3,16 +3,17 @@ import data from '../projects'
 import { FaGithubSquare, FaShareSquare } from 'react-icons/fa'
 
 const Projects = () => {
-  const [projects, setProjects] = useState(data)
-  const [showProjects, setShowProjects] = useState(true)
+
+  const [projects, setProjects] = useState({
+    data: data,
+    show: true
+  })
 
   const handleProjects = () => {
-    setProjects([])
-    if (projects.length === 0) {
-      setShowProjects(prevState => !prevState)
-    } else if (showProjects === false) {
-      setProjects(projects)
-    }
+    setProjects({
+      data: [],
+      show: !projects.show
+    })
   }
 
   return (
@@ -21,7 +22,7 @@ const Projects = () => {
         <h1 className='header__text'>Featured Projects</h1>
         <hr className="big" />
 
-        {projects.map((project) => {
+        {projects.data.map((project) => {
           const { id, img, title, text, button1, button2 } = project;
           return (
             <article className="projects__card" key={id}>
@@ -46,7 +47,7 @@ const Projects = () => {
         })}
       </div>
       <div className="btn-container">
-        <button className='btn btn-projects' onClick={handleProjects}>{showProjects ? 'Clear Projects' : 'Show Projects'}</button>
+        <button className='btn btn-projects' onClick={handleProjects}> {projects.show ? 'Clear Projects' : 'Show Projects'}</button>
       </div>
     </section>
   )
