@@ -3,7 +3,7 @@ import data from '../experience'
 import { FaAngleDoubleRight } from 'react-icons/fa'
 
 const Experience = () => {
-  const [jobs, setJobs] = useState(data)
+  const [jobs] = useState(data)
   const [value, setValue] = useState(0)
 
   // getting first job in the array
